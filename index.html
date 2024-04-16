@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iClean</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+  
+</head>
+<body>
+    
+    <div id="backForm">
+        <div class="form" id="form">
+            <div class="top">
+                <div class="close">
+                    <img id="hide" src="./sources/icons/cross.svg" alt="">
+                </div>
+                <div class="action">
+                    <input type="image" id="image">
+                </div>
+            </div>
+            <div class="mid">
+                <div class="rate">
+                    <fieldset class="rating">
+                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked="" aria-label="No rating.">
+                
+                        <input type="radio" id="rate1" name="rating" value="1">
+                        <label for="rate1">1 star</label>
+                
+                        <input type="radio" id="rate2" name="rating" value="2">
+                        <label for="rate2">2 stars</label>
+                
+                        <input type="radio" id="rate3" name="rating" value="3">
+                        <label for="rate3">3 stars</label>
+                
+                        <input type="radio" id="rate4" name="rating" value="4">
+                        <label for="rate4">4 stars</label>
+                
+                        <input type="radio" id="rate5" name="rating" value="5">
+                        <label for="rate5">5 stars</label>
+                
+                        <span class="focus-ring"></span>
+                      </fieldset>
+                </div>
+                <form action="index.html">
+                    <input id="imya" type="text" placeholder="Введите Ваше имя!">
+                    <input id="context" type="textarea" maxlength="100">
+                    <input id="subbtn" type="submit" value="Опубликовать">
+                </form>
+            </div>
+        </div>
+    </div>
+<div id="overlay">
+   <div class="popup" id="popup">
+    <div class="top">
+    <h1>iClean</h1>
+    <img id="cross" src="./sources/icons/cross.svg" alt="">
+    </div>
+    <div class="mid">
+        <span>Цена состоит из трех параметров:</span>
+        <ul>
+        <li>Количество квадратных метров</li>
+        <li>Местонахождение объекта</li>
+        <li>Период производственных работ</li>
+        </ul>
+    </div>
+        <div class="bottom">
+            <input type="text" placeholder="Введите Ваш номер!" class="text" minlength="11" maxlength="16" required>
+            <button id="subbut">Мы позвоним!</button>
+        </div>
+   </div>
+   
+</div>
+    <div class="btn-up btn-up_hide"></div>
+    <header class="header"> <div class="wrap">
+        <img id="logo"   src="./sources/лого.png" alt="logo">
+        <div class="nav"><div class="menu-button" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+            <ul class="menu">
+                <li><a href="#about"  onclick="toggleMenu()"> О нас</a></li>
+                <li><a href="#product"  onclick="toggleMenu()">Услуги</a></li> 
+                <li><a href="#garant"  onclick="toggleMenu()"> Гарантии</a></li>
+                <li><a href="#Con"  onclick="toggleMenu()">Контакты</a></li>
+                <li><a href="#feedback"  onclick="toggleMenu()">Отзывы</a></li>
+                <li><a href="#link"  onclick="toggleMenu()">Обратная связь</a></li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <main class="main"> 
+        <div class="an">
+        <div class="wel">
+            
+            <div class="wel_a">
+                <img src="./sources/name.png" alt="wel">
+            </div>
+            <a  href="#link"><button class="lightSpeedInLeft " data-wow-duration="1s" data-wow-delay="30s">Позвоните нам!</button></a>
+        </div>
+    </div>
+        <div class="wrap">
+            <section>
+                <div class="container_au animate__bounce">
+                    <div class="text_1 ">
+                        <h1 id="about">О нас</h1>
+                        <span>"Чистота - залог успеха!"</span>
+                     </div> 
+                <div class="text_2 animate__lightSpeedInLeft wow" data-wow-duration="2s" data-wow-delay="10s">
+                    <p class="fadeInLeft wow" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                        Мы ручаемся собственными швабрами,<br>
+                        за качество наших услуг! Ваш дом в надёжных<br>
+                        руках. Убедитесь в этом сами!
+                    </p>
+                </div>
+                    <div class="text_3">
+                    <h2>Кто мы?</h2>
+                    <p class="fadeInRight wow" data-wow-duration="0.5s" data-wow-delay="0.8s">
+                        Мы те, кто стоит на страже “порядка”. Каждый 
+                        день мы сражаемся против бактерий за вас! <br>
+                        Мы считаем, что в “Здоровом” доме - здоровый 
+                        дух.
+                    </p>
+                </div>
+                <div class="text_4">
+                    <h2>История</h2>
+                    <p class="fadeInLeft wow" data-wow-delay="1s">
+                        Наша компания, только начала свой путь. <br>
+                        Мы имеем грандиозные планы, а также <br>
+                        массу возможностей. 
+                        
+                    </p>
+                </div>
+                </div>
+            </section>
+            <section>
+                <div class="products">
+                   <div class="words">
+                    <h1 id="product">Наши услуги</h1>
+                   
+                   </div> 
+                   <div class="carts">
+                        <!-- <div class="cart_arrow">
+                            <div class="cart_arrow_right">
+                                <img src="./sources/carts/arr.png" alt="1ar">
+                                <img src="./sources/carts/arr.png" alt="2ar">
+                            </div>
+                            <div class="cart_arrow_left">
+                                <img src="./sources/carts/arr.png" alt="3ar">
+                                <img src="./sources/carts/arr.png" alt="4ar">
+                            </div>
+                        </div> -->
+                        <div class="cart_image">
+                           <div class="clining">
+                            <span>Клиниг</span>
+                            <div class="cart_image_img1 flipInX wow" data-wow-delay="0.3s" data-wow-duration="1.5s">
+                                <div class="fst-half">
+                                <h2>Дома</h2>
+                                </div>
+                                <div class="scnd-half">
+                                    <img id="clean" src="./sources/carts/but.png" alt="">
+                                </div>
+                            </div>
+                            <div class="cart_image_img2 flipInX wow">
+                                <div class="fst-half">
+                                <h2>Кваритры</h2>
+                                </div>
+                                <div class="scnd-half">
+                                    <img id="actBtn2" src="./sources/carts/but.png" alt="">
+                                </div>
+                            </div>
+                           </div>
+                           <div class="organisation">
+                               <span>Организация</span>
+                            <div class="cart_image_img3 flipInX wow">
+                                <div class="fst-half">
+                                <h2>Дома</h2>
+                                </div>
+                                <div class="scnd-half">
+                                 <img id="actBtn3" src="./sources/carts/but.png" alt="">
+                                </div>
+                            </div>
+                            <div class="cart_image_img4 flipInX wow">
+                                <div class="fst-half">
+                                <h2>Участка</h2>
+                                </div>
+                                <div class="scnd-half">
+                                    <img id="actBtn4" src="./sources/carts/but.png" alt="">
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                   </div>
+                   <a class="button-link" href="#link"><button class="zoomInUp wow" data-wow-delay="0.3s" data-wow-duration="1s">Позвоните нам!</button></a>
+                </div>
+            
+            
+                <div class="Garantii">
+                    <h1 id="garant">Гарантии</h1>
+                    <ul >
+                        <li><p class="fadeInLeft wow">Сначала работа потом деньги!</p></li>
+                        <span class="fadeInLeft wow">Мы работаем на совесть, поэтому не берём предоплаты.</span>
+                        <li><p class="fadeInRight wow">Наши отзывы говорят за нас!</p></li>
+                        <span class="fadeInRight wow">За нас говорит работа и наши потребители.</span>
+                        <li><p class="fadeInLeft wow">Нас любят и родители и дети!</p></li>
+                        <span class="fadeInLeft wow">Мы заботимся о вас!</span>
+                    </ul>
+                </div>
+            
+            
+                <div class="Contacts">
+                    <h1 id="Con">Контакты</h1>
+                    <div class="textblock">
+                        <h2>Как с нами связаться?</h2>
+                        <p>Пишите нам в любую социальную<br>сеть, пишите когда вам удобно и даже<br>неудобно. Мы вас ждём!</p>
+                        <div class="social">
+                            <ul>
+                                <li><a href=""><img src="./sources/icons/vk.svg" alt=""></a></li>
+                                <li><a href=""><img src="./sources/icons/wh.svg" alt=""></a></li>
+                                <li><a href=""><img src="./sources/icons/tg.svg" alt=""></a></li>
+                                <li><a href=""><img src="./sources/icons/inst.svg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="feedback">
+                    <h1 id="feedback">Отзывы</h1>
+                    <div class="block">
+                        <div class="block_main">
+                            <!-- <div class="block__left">
+                                <img src="./sources/icons/arr-l.png" alt="">
+                            </div>  -->
+                            <div class="block__mid">
+                                <div class="card">
+                                    <div class="card_top">
+                                        <img src="./sources/cards/omen.png" alt="">
+                                    </div>
+                                    <div class="card_mid">
+                                        <img src="./sources/icons/stars.png" alt="">
+                                    </div>
+                                    <div class="card_bottom">
+                                        <h4>Степан:</h4>
+                                        <span>Очень классная компания!</span>
+                                    </div>
+
+                                </div>
+                               
+                                
+                                <div class="card">
+                                    <div class="card_top">
+                                        <img src="./sources/cards/tmen.png" alt="">
+                                    </div>
+                                    <div class="card_mid">
+                                        <img src="./sources/icons/stars2.png" alt="">
+                                    </div>
+                                    <div class="card_bottom">
+                                        <h4>Андрей:</h4>
+                                        <span>Все вычистили!</span>
+                                    </div>
+
+                                </div>
+                                <div class="card">
+                                    <div class="card_top">
+                                        <img src="./sources/cards/thmen.png" alt="">
+                                    </div>
+                                    <div class="card_mid">
+                                        <img src="./sources/icons/stars3.png" alt="">
+                                    </div>
+                                    <div class="card_bottom">
+                                        <h4>Гоша:</h4>
+                                        <span>Опоздали, а так всё чисто!</span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card_top">
+                                        <img src="./sources/cards/omen.png" alt="">
+                                    </div>
+                                    <div class="card_mid">
+                                        <img src="./sources/icons/stars.png" alt="">
+                                    </div>
+                                    <div class="card_bottom">
+                                        <h4>Степан:</h4>
+                                        <span>Очень классная компания!</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                             
+                                
+                             <!-- <div class="block__right">
+                                <img src="./sources/icons/arr-r.png" alt="">
+                            </div>  -->
+                        </div>
+                        <button id="getf">Оставить<br>отзыв!</button>
+                </div>
+                    
+                </div>
+            </section>
+            <section>
+                <div class="link">
+                    <h1 id="link">Обратная связь</h1>
+                        <div class="link_con">
+                         <div class="link__left">
+                            <div class="left_header">
+                                <h3>Написать</h3>
+                            </div>
+                            <div class="left__main">
+                                <form action="">
+                                <input type="text" id="nameli" maxlength="20" required>
+                                <input type="text" id="comm" maxlength="100" required>
+                                <input type="reset" value="Отправить" id="submit">
+                            </form>
+                            </div>
+   
+                        </div>
+                    <div class="link__right">
+                        <div class="right_header">
+                            <h3>Позвонить</h3>
+                        </div>
+                        <div class="right_main">
+                            <div class="top">
+                                <a href="tel:+7(999)999 99-99"><span>+7(999)999 99-99</span></a>
+                            </div>
+                            <div class="bottom">
+                                <ul>
+                                    <a href=""><li><img src="./sources/icons/inst.svg" alt=""></li></a>
+                                    <a href=""><li><img src="./sources/icons/wh.svg" alt=""></li></a>
+                                    <a href=""><li><img src="./sources/icons/tg.svg" alt=""></li></a>
+                                    <a href=""><li><img src="./sources/icons/vk.svg" alt=""></li></a>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+            <div class="left wow bounceInDown">
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#product">Услуги</a></li>
+                    <li><a href="#garant">Гарантии</a></li>
+                    <li><a href="#Con">Контакты</a></li>
+                    <li><a href="#feedback">Отзывы</a></li>
+                    <li><a href="#link">Обратная связь</a></li>
+                </ul>
+            </div>
+            <div class="mid wow bounceInDown ">
+                <p>Контакты:</p>
+                <div class="con">
+                    <a href="tel:+7(999)999 99-99"><span>+7(999)999 99-99</span></a>
+                    <a href="mailto:xxxxxxxxmail.ru"><span>xxxxxxxxmail.ru</span></a>
+                </div>
+
+            </div>
+            <div class="right wow bounceInDown" data-wow-duration="1s">
+                <span>16+</span>
+                <ul>
+                    <li><a href=""><img src="./sources/icons/vk.svg" alt=""></a></li>
+                    <li><a href=""><img src="./sources/icons/wh.svg" alt=""></a></li>
+                    <li><a href=""><img src="./sources/icons/tg.svg" alt=""></a></li>
+                    <li><a href=""><img src="./sources/icons/inst.svg" alt=""></a></li>
+                </ul>
+            </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    
+</body>
+</html>
