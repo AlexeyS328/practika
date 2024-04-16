@@ -115,7 +115,7 @@ main .an{
     max-width: 100%;
     width: 100vw;   
     
-    background: url('../sources/bgs/bg-wel.jpg') no-repeat;
+    background: url('./sources/bgs/bg-wel.jpg') no-repeat;
     background-size: cover;
 }
 main .wel{

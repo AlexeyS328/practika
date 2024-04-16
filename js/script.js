@@ -1,4 +1,4 @@
-const bg = ['../sources/bgs/bg-wel2.jpg', '../sources/bgs/bg-wel3.jpg', '../sources/bgs/bg-wel.jpg'];
+const bg = ['./sources/bgs/bg-wel2.jpg', './sources/bgs/bg-wel3.jpg', './sources/bgs/bg-wel.jpg'];
 
 const an = document.querySelector('.an');
 an.style.background = `url(${bg[0]}) 0% 0% / cover no-repeat`;
